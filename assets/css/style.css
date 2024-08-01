@@ -107,7 +107,7 @@ main {
     border-radius: 50%;
     max-width: 300px;
     max-height: 300px;
-}
+}    
 #cover-text {
     /* Final rgba value sets the opacity so it is semi-transparent */
     background-color: rgba(241, 109, 107, .7);
@@ -151,6 +151,11 @@ margin-bottom: 20px;
     border-top: 1px solid #3a3a3a;
     margin: 5px 0;
 }
+benefits-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
 
 /* Footer */
 #social-networks {
@@ -210,8 +215,23 @@ margin-bottom: 20px;
         width: 300px;
         right: 50px;
     }
-}
-
+    /* Reasons section */
+    #benefits {
+        display: flex;
+        flex-direction: row;
+    }
+   #benefits > div {
+    flex: 1;
+   }
+   #benefits-image {
+    order: 0
+  }
+#benefits-mental > div {
+    align-self: flex-start;
+  }   
+  #benefits-physical > div {
+    align-self: flex-end;
+  }
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover {
